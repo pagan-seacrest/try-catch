@@ -1,5 +1,7 @@
+class MarkupTask {
+  constructor ()
 
-const books = [
+  books = [
     { 
       author: "Скотт Бэккер",
       name: "Тьма, что приходит прежде",
@@ -24,11 +26,14 @@ const books = [
      price: 40
     },
     {
-     author: "Дарья Донцова",
-     name: "Дед Снегур и Морозочка",
+      author: "Дарья Донцова",
+      name: "Дед Снегур и Морозочка",
     }
   ];
+}
 
+// ------------------------------------------------------
+  
 function createMarkup() {
   const root = document.getElementById("root");
   
@@ -36,7 +41,7 @@ function createMarkup() {
     root.append(element);
   }
 }
-
+// -------------------------------------------------------
 const append = createMarkup();
 
 function fillElements () {
